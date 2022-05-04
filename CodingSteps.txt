@@ -11,4 +11,25 @@ Fizemos a importação do JPA e do PostgreSQL. Como deu erro, fiz novamente.
 - Adiciona anotações no código para fazer a persistência no BD. Ver comentários nas classes
 - Faz um commit pra salvar as alterações
 
+- As configurações de banco de dados em projeto Spring Boot ficam no arquivo application.properties, dentro de resources
+O professor copiou os dados de um site chamado mkyong.com
+Fez a busca no google como spring data jpa postgres properties
+Foi só copiar e alterar o nome do BD e a senha
 
+- Cria uma variável idConta na classe Movimentacao para salvar no BD também. Fez os getters e setters e o @Column
+
+- Cria um novo pacote de repositório para guardar as movimentações.
+Cria duas Interface para isso e a extende com o JPA.Repository para fazer a persistência no BD
+As duas interface são a CorrentistaRepository e a MovimentacaoRepository.
+
+- Cria um novo pacote para o controller, que cria, altera, apaga os correntistas, etc.
+Ver os comentários na classo CorrentistaController.
+
+- A partir de agora deve-se configurar ambiente web. Então adiciona outro Spring Starter
+chamado Spring Web. Com isso, um TomCat é executado e podemos visualizar o BD no browser.
+
+- Insere um correntista no banco de dados para fazer o teste. Tem um script de INSERT no pgadmin.
+Não colocamos valor para o id do correntista, já que o JPA vai fazer isso automaticamente.
+Inserir o nome, cpf e saldo entre 'aspas simples'.
+
+Cria o pacote service e a classe CorrentistaService para fazer as inclusões de todos os dados no BD.

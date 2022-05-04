@@ -29,6 +29,8 @@ public class Movimentacao {
 	@Enumerated(EnumType.STRING)	// Salva o valor literal da movimentação (receita ou despesa)
 	private MovimentacaoTipo tipo;
 	
+	@Column(name = "id_conta")
+	private Integer idConta;
 	
 	public Integer getId() {
 		return id;
@@ -59,6 +61,12 @@ public class Movimentacao {
 	}
 	public void setTipo(MovimentacaoTipo tipo) {
 		this.tipo = tipo;
+	}
+	public Integer getIdConta() {
+		return idConta;
+	}
+	public void setIdConta(Integer idConta) {
+		this.idConta = idConta;
 	}
 	
 	
