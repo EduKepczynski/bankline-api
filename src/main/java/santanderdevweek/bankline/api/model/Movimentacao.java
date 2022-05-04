@@ -2,12 +2,31 @@ package santanderdevweek.bankline.api.model;
 
 import java.time.LocalDateTime;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="tab_movimentacao")		// JPA cria a tabela
+
 public class Movimentacao {
 	
+	@Id		// Gera o id da movimentação
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
+	
+	@Column(name = "data_hora")
 	private LocalDateTime dataHora;
+	
 	private String descricao;
 	private Double valor;
+	
+	@Enumerated(EnumType.STRING)	// Salva o valor literal da movimentação (receita ou despesa)
 	private MovimentacaoTipo tipo;
 	
 	

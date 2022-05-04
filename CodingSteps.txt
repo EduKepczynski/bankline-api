@@ -5,3 +5,10 @@ Personal annotations about the coding steps to improve my learning curve.
 - Instalação do Spring Tool Suite 4
 - Criação do banco de dados no PostgreSQL. Criei um BD específico para o projeto
 
+- Adiciona Starters do Spring clicando com o botão direito em cima do nome do projeto.
+Fizemos a importação do JPA e do PostgreSQL. Como deu erro, fiz novamente.
+
+- Adiciona anotações no código para fazer a persistência no BD. Ver comentários nas classes
+- Faz um commit pra salvar as alterações
+
+
