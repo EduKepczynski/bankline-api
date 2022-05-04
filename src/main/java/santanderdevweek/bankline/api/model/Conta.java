@@ -1,5 +1,7 @@
 package santanderdevweek.bankline.api.model;
 
+
+
 public class Conta {
 	
 	private Long numero;
@@ -18,6 +20,7 @@ public class Conta {
 	public void setSaldo(Double saldo) {
 		this.saldo = saldo;
 	}
+	
 	
 	
 

@@ -1,8 +1,7 @@
 Personal annotations about the coding steps to improve my learning curve.
 
-1 - Criação do pacote model
-2 - Declaração das classes que serão utilizadas
+- Criação do pacote model
+- Declaração das classes que serão utilizadas
+- Instalação do Spring Tool Suite 4
+- Criação do banco de dados no PostgreSQL. Criei um BD específico para o projeto
 
-3 - Instalação do Spring Tool Suite 4
-
-4 - Criação do banco de dados no PostgreSQL
