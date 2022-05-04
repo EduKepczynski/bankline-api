@@ -32,4 +32,30 @@ chamado Spring Web. Com isso, um TomCat é executado e podemos visualizar o BD n
 Não colocamos valor para o id do correntista, já que o JPA vai fazer isso automaticamente.
 Inserir o nome, cpf e saldo entre 'aspas simples'.
 
-Cria o pacote service e a classe CorrentistaService para fazer as inclusões de todos os dados no BD.
+- Cria o pacote service e a classe CorrentistaService para fazer as inclusões de todos os dados no BD.
+
+- Já está pronto para inserir dados no BD, mas só temos operações GET no http. Não conseguimos inserir dados.
+Aí que vamos inserir o SWAGGER para documentar nossa API.
+Em busca no google o professor copiou e colou a dependência no swagger no pom.xml.
+Ele mencionou que sempre deve ter o groupId, artifactId e version na dependência.
+Estava dando erro na execução. Isso foi por causa da versão do swagger mencionada no arquivo pom.xml.
+Ao alterar para uma versão mais recente, funcionou. Atentar-se aos dados copiados da internet.
+
+Para consultar a documentação feita pelo swagger, digitar esse endereço no browser:
+http://localhost:8080/swagger-ui/index.html
+
+Na aba GET é possível consultar os clientes cadastrados.
+Na aba POST é possível cadastrar clientes novos. Para isso é só colocar o nome e cpf
+conforme o swagger pede no campo 'Request body'.
+
+- Agora é necessário fazer a mesma coisa com a movimentação. Como é necessário salvar cada nova 
+movimentação, deve-se incluir uma nova classe no DTO.
+As variáveis usadas são iguais às usadas na classe Movimentacao.java.
+
+- Fazer a MovimentacaoService. É bem parecida com a CorrentistaService.
+
+- Nesse momento, a movimentação não está aparecendo no saldo do cliente.
+Isso é porque não codificamos como atualizar o saldo da conta em questão.
+A atualização está descrita nos comentários da classe MovimentacaoService.
+
+======================= FINAL DA AULA 1 ======================
