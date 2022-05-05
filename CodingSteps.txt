@@ -59,3 +59,5 @@ Isso é porque não codificamos como atualizar o saldo da conta em questão.
 A atualização está descrita nos comentários da classe MovimentacaoService.
 
 ======================= FINAL DA AULA 1 ======================
+
+-Na aula 2 incluímos o pacote 'config' e a classe 'WebConfig.java' para não dar conflito com o front-end na leitura do BD.
