@@ -11,6 +11,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 @Entity
 @Table(name="tab_movimentacao")		// JPA cria a tabela
 
@@ -38,6 +40,7 @@ public class Movimentacao {
 	public void setId(Integer id) {
 		this.id = id;
 	}
+	@JsonFormat(pattern="yyyy-MM-dd HH:mm:ss")
 	public LocalDateTime getDataHora() {
 		return dataHora;
 	}
@@ -50,6 +53,7 @@ public class Movimentacao {
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}
+	
 	public Double getValor() {
 		return valor;
 	}
